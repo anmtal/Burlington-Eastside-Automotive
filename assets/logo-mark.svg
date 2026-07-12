@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="none" stroke="#059669" stroke-width="5"/><line x1="24.0" y1="35.0" x2="30.1" y2="38.5" stroke="#059669" stroke-width="3" stroke-linecap="round"/><line x1="35.0" y1="24.0" x2="38.5" y2="30.1" stroke="#059669" stroke-width="3" stroke-linecap="round"/><line x1="50.0" y1="20.0" x2="50.0" y2="27.0" stroke="#059669" stroke-width="3" stroke-linecap="round"/><line x1="65.0" y1="24.0" x2="61.5" y2="30.1" stroke="#059669" stroke-width="3" stroke-linecap="round"/><line x1="76.0" y1="35.0" x2="69.9" y2="38.5" stroke="#059669" stroke-width="3" stroke-linecap="round"/><line x1="50" y1="50" x2="66.3" y2="35.3" stroke="#059669" stroke-width="5" stroke-linecap="round"/><circle cx="50" cy="50" r="5" fill="#059669"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 252">
+ <defs>
+  <linearGradient id="st" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#F4F6F8"/><stop offset="0.30" stop-color="#C8CED6"/>
+   <stop offset="0.52" stop-color="#848B95"/><stop offset="0.72" stop-color="#C8CED6"/>
+   <stop offset="1" stop-color="#E9ECEF"/>
+  </linearGradient>
+  <path id="ta" d="M 46 110 A 116 116 0 0 1 254 110" fill="none"/>
+  <path id="ba" d="M 58 150 A 104 104 0 0 0 242 150" fill="none"/>
+ </defs>
+ <text font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="31" fill="#1E3A6E" letter-spacing="1.5">
+  <textPath href="#ta" startOffset="50%" text-anchor="middle">BURLINGTON</textPath>
+ </text>
+ <g stroke="#20406F" stroke-width="2.4" stroke-linejoin="round">
+  <g transform="translate(190,214) rotate(-33)" fill="url(#st)">
+   <rect x="-6" y="-58" width="12" height="58" rx="6"/>
+   <path d="M -15 -88 h 9 v 20 h 12 v -20 h 9 v 32 h -30 z"/>
+  </g>
+  <g transform="translate(110,214) rotate(33)" fill="url(#st)">
+   <rect x="-6" y="-58" width="12" height="58" rx="6"/>
+   <path d="M -15 -88 h 9 v 20 h 12 v -20 h 9 v 32 h -30 z"/>
+  </g>
+ </g>
+ <g>
+  <path d="M 50 116 L 60 108 L 240 108 L 250 116 L 240 124 L 250 150 L 60 150 L 50 124 L 60 116 Z" fill="url(#st)" stroke="#20406F" stroke-width="2.6" stroke-linejoin="round"/>
+  <text x="150" y="140" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="31" fill="#1E3A6E" letter-spacing="1">EAST SIDE</text>
+ </g>
+ <text font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="24" fill="#1E3A6E" letter-spacing="2.5">
+  <textPath href="#ba" startOffset="50%" text-anchor="middle">AUTOMOTIVE</textPath>
+ </text>
+ <text x="150" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#1E3A6E">905.632.3504</text>
+</svg>
