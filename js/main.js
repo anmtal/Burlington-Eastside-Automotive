@@ -1,5 +1,5 @@
 /* ============================================================
-   BAJE AUTO SERVICES — interactions (shared across all pages)
+   BURLINGTON EASTSIDE AUTOMOTIVE — interactions (shared across all pages)
    Feature-detected, so this file runs safely on every page.
    ============================================================ */
 (function () {
@@ -12,7 +12,7 @@
     instagram: "https://www.facebook.com/p/Burlington-East-Side-Automotive-100069459742204/",
     endpoint: ""
   };
-  window.BAJE = CONFIG;
+  window.SHOP = CONFIG;
 
   const $ = (s, c) => (c || document).querySelector(s);
   const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
@@ -141,7 +141,7 @@
     requestAnimationFrame(() => t.classList.add("show"));
     setTimeout(() => { t.classList.remove("show"); setTimeout(() => t.remove(), 400); }, 4200);
   }
-  window.bajeToast = toast;
+  window.shopToast = toast;
 
   /* ---- BOOKING FORM ---- */
   const form = $("#quoteForm");
@@ -198,7 +198,7 @@
       const data = Object.fromEntries(new FormData(form).entries());
       const services = $$("input[name=services]:checked", form).map(c => c.value).join(", ");
       const lead = {
-        source: "baje-website", name: data.name, phone: data.phone, email: data.email || "",
+        source: "burlington-eastside-website", name: data.name, phone: data.phone, email: data.email || "",
         services, date: data.eventDate || "flexible", time: data.time || "any time",
         message: data.message || "", submittedAt: new Date().toISOString()
       };
@@ -210,9 +210,12 @@
       }
 
       const subject = encodeURIComponent(`Appointment request — ${services}`);
+      const vehicle = [data.vehYear, data.vehMake, data.vehModel].filter(Boolean).join(" ");
       const bodyLines = [
         "Hi Burlington Eastside, I'd like to book a service.", "",
-        `Service(s): ${services}`, `Preferred date: ${lead.date}`, `Preferred time: ${lead.time}`, "",
+        `Vehicle: ${vehicle || "—"}`,
+        `Service(s): ${services}`, `Issue: ${data.issue || "—"}`,
+        `Preferred date: ${lead.date}`, `Preferred time: ${lead.time}`, "",
         `Name: ${lead.name}`, `Phone: ${lead.phone}`, `Email: ${lead.email || "—"}`, "",
         `Notes: ${lead.message || "—"}`
       ];
